@@ -18,6 +18,7 @@ p {
   font-size: 2.3rem;
   font-family: "Open Sans", sans-serif;
 }
+/*  Header section */
 .main-header-heading {
   font-size: 2.5rem;
   text-align: center;
@@ -31,7 +32,7 @@ p {
   background-size: cover;
   display: block;
 }
-
+/* Hello Section */
 .hello-section {
   width: 50%;
   margin: 0 auto;
@@ -40,11 +41,10 @@ p {
 .hello-section > h1 {
   font-size: 4.5rem;
 }
-
+/* Youtubability */
 .youtubability-section-text {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 8em;
+  width: 60%;
+  margin: 0 auto 8em auto;
 }
 .youtubability-section-text > h2 {
   margin-top: 5em;
@@ -56,19 +56,20 @@ p {
   text-align: left;
 }
 .youtubability-section-image {
-  width: 600px;
+  width: 35rem;
   height: auto;
   float: right;
   position: relative;
 }
-
+/* Big Dark Block */
 .big-block,
 footer {
-  height: 50rem;
-  text-align: center;
   background-color: rgb(46, 46, 46);
   color: white;
   font-size: 2.5em;
+}
+.big-block {
+  height: 50rem;
 }
 .mobile-section {
   width: 50%;
@@ -77,7 +78,7 @@ footer {
   text-align: right;
 }
 .mobile-section-image {
-  width: 750px;
+  width: 55rem;
   height: auto;
   float: left;
   position: relative;
@@ -111,4 +112,22 @@ footer {
 .tip-container-text > h2 {
   margin-top: 3em;
   font-size: 4.5rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10rem;
+}
+.heading {
+  grid-area: 1 / 1 / 2 / span 2;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.paragraph1 {
+  text-align: left;
+}
+.paragraph2 {
+  text-align: right;
 }
