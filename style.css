@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --fc-dark: rgb(46, 46, 46, 0.9);
+}
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: var(--fc-dark);
+}
+
+p {
+  margin-top: 50px;
+  font-size: 2.3rem;
+  font-family: "Open Sans", sans-serif;
+}
+.main-header-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -50px;
+}
+.header-image {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.hello-section {
+  width: 50%;
+  margin: 0 auto;
+  text-align: right;
+}
+.hello-section > h1 {
+  font-size: 4.5rem;
+}
+
+.youtubability-section-text {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 8em;
+}
+.youtubability-section-text > h2 {
+  margin-top: 5em;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+.youtubability-section-text > p {
+  margin-top: 50px;
+  text-align: left;
+}
+.youtubability-section-image {
+  width: 600px;
+  height: auto;
+  float: right;
+  position: relative;
+}
+
+.big-block,
+footer {
+  height: 50rem;
+  text-align: center;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-size: 2.5em;
+}
+.mobile-section {
+  width: 50%;
+  margin: 10em auto auto auto;
+  margin-bottom: 8em;
+  text-align: right;
+}
+.mobile-section-image {
+  width: 750px;
+  height: auto;
+  float: left;
+  position: relative;
+  margin-top: -5rem;
+}
+.big-white-block {
+  height: 20rem;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+}
+.big-white-block > p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.tip-container {
+  background-image: url(../img/Q1_newsletter-02.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-content: center;
+  height: 50rem;
+}
+.tip-container-text {
+  padding: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-end;
+}
+.tip-container-text > h2 {
+  margin-top: 3em;
+  font-size: 4.5rem;
+}
