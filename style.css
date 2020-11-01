@@ -10,124 +10,112 @@ h1,
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
+}
+h1,
+h2 {
   color: var(--fc-dark);
 }
 
 p {
-  margin-top: 50px;
-  font-size: 2.3rem;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
-/*  Header section */
-.main-header-heading {
-  font-size: 2.5rem;
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "hello hello"
+    "youtubability mobilefrontimage"
+    "darkdiv darkdiv"
+    "mobilebackimage remainingtext"
+    "para para"
+    "tip tip"
+    "fheading fheading"
+    "fheading fheading"
+    "fpara1 fpara2";
+
+  padding: 10px;
+}
+/* Main Header */
+.heading {
+  grid-area: header;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: -50px;
-}
-.header-image {
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("../img/header.png.png");
   background-size: cover;
-  display: block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: solid red 10px;
 }
-/* Hello Section */
-.hello-section {
-  width: 50%;
-  margin: 0 auto;
+.hey {
+  grid-area: hello;
   text-align: right;
+  padding-right: 2.5rem;
 }
-.hello-section > h1 {
-  font-size: 4.5rem;
+.youtubability-text {
+  grid-area: youtubability;
+  padding: 10px;
+  border: solid rebeccapurple 10px;
 }
-/* Youtubability */
-.youtubability-section-text {
-  width: 60%;
-  margin: 0 auto 8em auto;
+.youtubability-img {
+  grid-area: mobilefrontimage;
+  background-image: url("../img/phone_no1-03.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  border: solid rebeccapurple 10px;
 }
-.youtubability-section-text > h2 {
-  margin-top: 5em;
-  margin-bottom: 50px;
-  font-size: 2.5rem;
+.big-dark-div {
+  grid-area: darkdiv;
+  padding: 4rem;
+  background-color: var(--fc-dark);
 }
-.youtubability-section-text > p {
-  margin-top: 50px;
-  text-align: left;
+
+.remaining-youtubability-img {
+  grid-area: mobilebackimage;
+  background-image: url(../img/phone_no2-03.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  padding: 10px;
+  border: solid rebeccapurple 10px;
 }
-.youtubability-section-image {
-  width: 35rem;
-  height: auto;
-  float: right;
-  position: relative;
+.remaining-youtubability-text {
+  grid-area: remainingtext;
+  padding: 10px;
+  border: solid rebeccapurple 10px;
 }
-/* Big Dark Block */
-.big-block,
-footer {
-  background-color: rgb(46, 46, 46);
-  color: white;
-  font-size: 2.5em;
+.remaining-para {
+  grid-area: para;
+  padding: 10px;
+  border: solid red 10px;
 }
-.big-block {
-  height: 50rem;
-}
-.mobile-section {
-  width: 50%;
-  margin: 10em auto auto auto;
-  margin-bottom: 8em;
-  text-align: right;
-}
-.mobile-section-image {
-  width: 55rem;
-  height: auto;
-  float: left;
-  position: relative;
-  margin-top: -5rem;
-}
-.big-white-block {
-  height: 20rem;
-  width: 100%;
-  background-color: white;
-  display: inline-block;
-}
-.big-white-block > p {
-  max-width: 50%;
-  margin: 0 auto;
-}
-.tip-container {
-  background-image: url(../img/Q1_newsletter-02.png);
+/* Tip of the week Paragraph */
+.tip-para {
+  grid-area: tip;
+  padding: 2.5rem;
+  background-image: url("../img/Q1_newsletter-02.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
-  align-content: center;
-  height: 50rem;
 }
-.tip-container-text {
+/* Footer Section */
+.footer-heading,
+.footer-para1,
+.footer-para2 {
+  background-color: var(--fc-dark);
+  color: white;
+}
+.footer-heading {
+  grid-area: fheading;
+  padding: 1rem;
+}
+.footer-para1 {
+  grid-area: fpara1;
   padding: 10px;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: flex-end;
 }
-.tip-container-text > h2 {
-  margin-top: 3em;
-  font-size: 4.5rem;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  padding: 10rem;
-}
-.heading {
-  grid-area: 1 / 1 / 2 / span 2;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-}
-.paragraph1 {
-  text-align: left;
-}
-.paragraph2 {
+.footer-para2 {
+  grid-area: fpara2;
+  padding: 10px;
   text-align: right;
 }
